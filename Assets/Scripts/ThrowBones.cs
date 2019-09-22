@@ -7,7 +7,7 @@ public class ThrowBones : MonoBehaviour
     public BoneField BoneField;
     public GameObject bone;
     private Camera cam;
-    private float speed = 10f;
+    private float speed = 15f;
 
     private void Start()
     {
