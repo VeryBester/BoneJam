@@ -73,7 +73,7 @@ public class BoneField : MonoBehaviour
         return false;
     }
 
-    public void GiveBone()
+    public void GiveBone(Sprite sprite)
     {
         GameObject newBoneField = GameObject.Instantiate(BoneFieldPrefab);
         newBoneField.transform.position = transform.position;
@@ -83,6 +83,13 @@ public class BoneField : MonoBehaviour
         jointRef.distance = FieldSpringDistance;
         jointRef.dampingRatio = FieldSpringDampingRatio;
         jointRef.frequency = FieldSpringFrequency;
+
+        newBoneField.GetComponent<SpriteRenderer>().sprite = sprite;
+        newBoneField.transform.rotation = Quaternion.Euler(
+            0,
+            0,
+            Random.Range(0, 360)
+        );
 
         BoneFields.Add(newBoneField);
         UpdateBoneCounter();

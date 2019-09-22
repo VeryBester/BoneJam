@@ -6,6 +6,10 @@ TagManager:
   tags:
   - BoneField
   - BoneCounter
+  - Enemy
+  - CollectibleBone
+  - TextDisplay
+  - JukeBox
   layers:
   - Default
   - TransparentFX

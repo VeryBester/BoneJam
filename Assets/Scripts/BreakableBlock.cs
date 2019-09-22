@@ -14,7 +14,8 @@ public class BreakableBlock : MonoBehaviour
     David
     */
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.CompareTag("Bone")){
+        if(other.gameObject.tag.Equals("CollectibleBone"))
+        {
             Destroy(this);
         }
     }

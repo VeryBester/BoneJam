@@ -12,6 +12,7 @@ public class CollectibleBone : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity.magnitude > VelocityKillThreshold
             )
         {
+            GameObject.FindWithTag("JukeBox").GetComponent<effectsplayer>().PlayMajordmg();
             other.gameObject.GetComponent<EnemyDeath>().Damage(10);
         }
 
