@@ -7,7 +7,7 @@ public class ThrowBones : MonoBehaviour
     public BoneField BoneField;
     public GameObject bone;
     private Camera cam;
-    private float speed = 10f;
+    private float speed = 15f;
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class ThrowBones : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && BoneField.ThrowBone())
         {
-
+            GameObject.FindWithTag("JukeBox").GetComponent<effectsplayer>().Playshield();
             Vector3 clickPos = cam.ScreenToWorldPoint(Input.mousePosition);
             float mouseX = clickPos.x;
             float mousey = clickPos.y;
@@ -35,6 +35,7 @@ public class ThrowBones : MonoBehaviour
             direction = new Vector2(direction.x / normalizingFactor, direction.y / normalizingFactor);
 
             Throw(direction);
+            
         }
     }
 

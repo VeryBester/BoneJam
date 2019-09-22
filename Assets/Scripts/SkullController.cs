@@ -20,6 +20,7 @@ public class SkullController : MonoBehaviour
     public AnimationCurve AccelerationCurve;
     public bool Invunerable = false;
     public bool StartedShieldDecay = false;
+    
 
     // Update is called once per frame
     void FixedUpdate()
@@ -69,6 +70,7 @@ public class SkullController : MonoBehaviour
             Vector3 dashVector = new Vector3(GetComponent<Rigidbody2D>().velocity.x, 0, 0).normalized;
             if(GameObject.FindGameObjectWithTag("BoneField").GetComponent<BoneField>().BoneShield(-dashVector))
             {
+                GameObject.FindWithTag("JukeBox").GetComponent<effectsplayer>().PlayThrow();
                 StartCoroutine(DoShield());
             }
             
