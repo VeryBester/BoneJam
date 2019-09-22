@@ -16,10 +16,12 @@ public class Dialog : MonoBehaviour
 
     [Header("References")]
     public AudioSource BlurbSoundGenerator;
+    public MonoBehaviour ToTrigger;
+    public Dialog AltToTrigger;
     public TextMeshProUGUI Display;
 
     // Start is called before the first frame update
-    void Start()
+    public void Trigger()
     {
         StartCoroutine(DisplayDialog());
     }
@@ -28,11 +30,16 @@ public class Dialog : MonoBehaviour
     {
         foreach (string s in Blurbs)
         {
-            Display.text = "";
+            GameObject.FindGameObjectWithTag("TextDisplay").GetComponent<TextMeshProUGUI>().text = "";
             yield return (DisplayBlurb(s));
             while (!Input.GetKeyDown(ContinueCode))
                 yield return null;
         }
+
+        if(ToTrigger != null)
+            ToTrigger.enabled = true;
+        else if(AltToTrigger != null)
+            AltToTrigger.Trigger();
     }
 
     private IEnumerator DisplayBlurb(string blurb)
@@ -45,7 +52,7 @@ public class Dialog : MonoBehaviour
             }
             else
             {
-                Display.text += c;
+                GameObject.FindGameObjectWithTag("TextDisplay").GetComponent<TextMeshProUGUI>().text += c;
                 BlurbSoundGenerator.Play();
                 if (c == '.')
                 {

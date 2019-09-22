@@ -8,6 +8,7 @@ TagManager:
   - BoneCounter
   - Enemy
   - CollectibleBone
+  - TextDisplay
   layers:
   - Default
   - TransparentFX
