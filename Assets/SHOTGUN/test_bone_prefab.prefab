@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4486031108550203911}
   m_Layer: 10
   m_Name: test_bone_prefab
-  m_TagString: Untagged
+  m_TagString: CollectibleBone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanCollect: 0
+  VelocityKillThreshold: 0.2
 --- !u!212 &4486031108550203911
 SpriteRenderer:
   m_ObjectHideFlags: 0
