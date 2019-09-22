@@ -10,6 +10,7 @@ public class BoneFieldCollisionHandler : MonoBehaviour
         {
             print("BOP");
             collision.gameObject.GetComponent<EnemyDeath>().Damage(1);
+            GameObject.FindWithTag("JukeBox").GetComponent<effectsplayer>().PlayMinordmg();
         }
     }
 }

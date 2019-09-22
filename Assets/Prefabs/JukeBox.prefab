@@ -44,5 +44,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwSound:
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 88c9c68dacbfdc144bbfb3bdf1f4e3f1, type: 3}
+    volume: 1
+  shieldsound:
+    clip: {fileID: 8300000, guid: b58ff19fade227746891ace8485895f5, type: 3}
+    volume: 2
+  coinsound:
+    clip: {fileID: 8300000, guid: fe8721a2764bfe6459106b1d30c4616b, type: 3}
+    volume: 1
+  smalldmg:
+    clip: {fileID: 8300000, guid: 2401afa00c5c2124e85b4f98054cb9a1, type: 3}
+    volume: 1
+  bigdmg:
+    clip: {fileID: 8300000, guid: 92c223a56bc91f642918d859c64193c6, type: 3}
+    volume: 5
+  deathsound:
+    clip: {fileID: 8300000, guid: 819cf1ccae7533b4d9f11aa858a4bc99, type: 3}
     volume: 1

@@ -17,6 +17,7 @@ public class effectsplayer : MonoBehaviour
     public Sound coinsound;
     public Sound smalldmg;
     public Sound bigdmg;
+    public Sound deathsound;
     private AudioSource audioSource;
 
     public void Start()
@@ -47,6 +48,10 @@ public class effectsplayer : MonoBehaviour
     public void PlayMajordmg()
     {
         PlaySound(bigdmg);
+    }
+    public void Playdeath()
+    {
+        PlaySound(deathsound);
     }
     private void PlaySound(Sound sound)
     {

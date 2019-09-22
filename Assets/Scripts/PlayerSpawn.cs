@@ -20,9 +20,11 @@ public class PlayerSpawn : MonoBehaviour
         if(other.gameObject.tag == "Enemy" || other.gameObject.tag == "Bad")
         {
             // boneField.ThrowAllBones();
+
             GetComponent<SkullController>().StartedShieldDecay = true;
             if (!GetComponent<SkullController>().Invunerable)
             {
+                GameObject.FindWithTag("JukeBox").GetComponent<effectsplayer>().Playdeath();
                 transform.position = respawnPoint;
             }
         }

@@ -19,6 +19,7 @@ public class PhysChunk : MonoBehaviour
 
     public IEnumerator Fall()
     {
+        GameObject.FindWithTag("JukeBox").GetComponent<effectsplayer>().PlayMajordmg();
         GetComponent<Rigidbody2D>().freezeRotation = false;
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         yield return new WaitForSeconds(EstimatedFallTime);
