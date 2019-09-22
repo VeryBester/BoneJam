@@ -38,6 +38,11 @@ public class BoneField : MonoBehaviour
         SpawnBoneFields();
     }
 
+    private void UpdateBoneCounter()
+    {
+        GameObject.FindGameObjectWithTag("BoneCounter").GetComponent<BoneCounter>().SetBoneCount(BoneFields.Count);
+    }
+
     public bool ThrowBone()
     {
         if(BoneFields.Count > 0)
@@ -45,7 +50,7 @@ public class BoneField : MonoBehaviour
             GameObject toDestroy = BoneFields[BoneFields.Count - 1];
             BoneFields.RemoveAt(BoneFields.Count - 1);
             GameObject.Destroy(toDestroy);
-
+            UpdateBoneCounter();
             return true;
         }
 
@@ -53,7 +58,7 @@ public class BoneField : MonoBehaviour
     }
 
     public void ThrowAllBones(){
-        while(ThrowBone()){}
+        //while(ThrowBone()){}
     }
 
     public bool BoneShield(Vector3 direction)
@@ -61,6 +66,7 @@ public class BoneField : MonoBehaviour
         if(BoneFields.Count >= ShieldCost)
         {
             TakeBone(5, direction);
+            UpdateBoneCounter();
             return true;
         }
 
@@ -79,6 +85,7 @@ public class BoneField : MonoBehaviour
         jointRef.frequency = FieldSpringFrequency;
 
         BoneFields.Add(newBoneField);
+        UpdateBoneCounter();
     }
 
     public void TakeBone(int count, Vector3 direction)

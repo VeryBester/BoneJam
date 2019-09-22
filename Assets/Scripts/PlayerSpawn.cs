@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerSpawn : MonoBehaviour
 {   
     // Need to set this whenever enters new scene
-    public Transform respawnPoint;
+    public Vector3 respawnPoint;
 
     private BoneField boneField;
     private Rigidbody2D rb;
@@ -17,9 +17,14 @@ public class PlayerSpawn : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.tag == "Bad"){
+        if(other.gameObject.tag == "Enemy" || other.gameObject.tag == "Bad")
+        {
             // boneField.ThrowAllBones();
-            transform.position = respawnPoint.position;
+            GetComponent<SkullController>().StartedShieldDecay = true;
+            if (!GetComponent<SkullController>().Invunerable)
+            {
+                transform.position = respawnPoint;
+            }
         }
     }
 

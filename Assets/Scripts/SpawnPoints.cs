@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SpawnPoints : MonoBehaviour
 {
-    Transform spawnPosition;
+    Vector3 spawnPosition;
     public PlayerSpawn ps;
 
     private void Start() {
-        spawnPosition = transform.GetChild(0);
+        spawnPosition = transform.GetChild(0).position;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

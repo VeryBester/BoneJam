@@ -8,10 +8,17 @@ public class EnemyDeath : MonoBehaviour
     public int MinDrop;
     public int MaxDrop;
     public float DropForceMagnitude;
+    public int HP = 2;
+
+    public void Damage(int amount)
+    {
+        HP -= amount;
+        if (HP <= 0)
+            Die();
+    }
 
     public void Die()
     {
-        print("DIEDIE");
 
         int amt = Random.Range(MinDrop, MaxDrop);
         for (int i = 0; i < amt; i++)

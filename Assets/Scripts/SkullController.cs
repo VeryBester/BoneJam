@@ -19,12 +19,17 @@ public class SkullController : MonoBehaviour
     public float SwimSpeed = 20;
     public AnimationCurve AccelerationCurve;
     public bool Invunerable = false;
+    public bool StartedShieldDecay = false;
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Accelerate();
         TrySwim();
+    }
+
+    private void Update()
+    {
         TrySheild();
     }
 
@@ -60,6 +65,7 @@ public class SkullController : MonoBehaviour
     {
         if(Input.GetKeyDown(DashCode))
         {
+            print("DETECT");
             Vector3 dashVector = new Vector3(GetComponent<Rigidbody2D>().velocity.x, 0, 0).normalized;
             if(GameObject.FindGameObjectWithTag("BoneField").GetComponent<BoneField>().BoneShield(-dashVector))
             {
@@ -73,8 +79,18 @@ public class SkullController : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().color = Color.red;
         Invunerable = true;
-        yield return new WaitForSeconds(1);
+
+        while (StartedShieldDecay == false)
+            yield return null;
+
+        StartedShieldDecay = false;
+
+        print("STARTED SHIELD DECAY");
+
+        yield return new WaitForSeconds(3);
+
         Invunerable = false;
+        StartedShieldDecay = false;
         GetComponent<SpriteRenderer>().color = Color.white;
     }
 }
