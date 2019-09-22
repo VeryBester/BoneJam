@@ -34,13 +34,17 @@ public class ThrowBones : MonoBehaviour
             float normalizingFactor = Mathf.Sqrt(direction.x * direction.x + direction.y * direction.y);
             direction = new Vector2(direction.x / normalizingFactor, direction.y / normalizingFactor);
 
-            GameObject b = Instantiate(bone);
-            b.transform.position = transform.position;
-            Rigidbody2D rb = b.GetComponent<Rigidbody2D>();
-            rb.velocity = direction * speed;
-            rb.angularVelocity = 1000;
-
+            Throw(direction);
         }
+    }
+
+    public void Throw(Vector3 direction)
+    {
+        GameObject b = Instantiate(bone);
+        b.transform.position = transform.position;
+        Rigidbody2D rb = b.GetComponent<Rigidbody2D>();
+        rb.velocity = direction * speed;
+        rb.angularVelocity = 1000;
     }
 
     // IEnumerator destroyBone(GameObject b){

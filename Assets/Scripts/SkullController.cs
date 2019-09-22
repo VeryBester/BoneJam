@@ -9,22 +9,23 @@ public class SkullController : MonoBehaviour
     [Header("Axis Bindings")]
     public string HorizontalAxis = "Horizontal";
     public string VerticalAxis = "Vertical";
+    public KeyCode DashCode = KeyCode.Space;
 
-    [Header("Horizontal Movement Parameters")]
+    [Header("Movement Parameters")]
     public float BaseSpeed = 1f;
     public float MaxSpeed = 10f;
-
-    [Header("Vertical Movement Parameters")]
+    public float DashSpeed = 10f;
     public bool CanSwim = false;
     public float SwimSpeed = 20;
-
     public AnimationCurve AccelerationCurve;
+    public bool Invunerable = false;
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Accelerate();
         TrySwim();
+        TrySheild();
     }
 
     private void Accelerate()
@@ -53,5 +54,27 @@ public class SkullController : MonoBehaviour
                 new Vector3(0, SwimSpeed, 0) *
                 Input.GetAxis(VerticalAxis));
         }
+    }
+
+    private void TrySheild()
+    {
+        if(Input.GetKeyDown(DashCode))
+        {
+            Vector3 dashVector = new Vector3(GetComponent<Rigidbody2D>().velocity.x, 0, 0).normalized;
+            if(GameObject.FindGameObjectWithTag("BoneField").GetComponent<BoneField>().BoneShield(-dashVector))
+            {
+                StartCoroutine(DoShield());
+            }
+            
+        }
+    }
+
+    private IEnumerator DoShield()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        Invunerable = true;
+        yield return new WaitForSeconds(1);
+        Invunerable = false;
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

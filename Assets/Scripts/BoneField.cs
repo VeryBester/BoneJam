@@ -13,6 +13,9 @@ public class BoneField : MonoBehaviour
     public int NumberOfFields = 20;
     public float SmoothFactor = 1;
     public SkullController SkullController;
+    public ThrowBones ThrowBones;
+    public float LostBoneVelocity = 1;
+    public int ShieldCost = 5;
     private Vector3 ReferenceVelocity = Vector3.zero;
     private List<GameObject> BoneFields;
 
@@ -49,6 +52,17 @@ public class BoneField : MonoBehaviour
         return false;
     }
 
+    public bool BoneShield(Vector3 direction)
+    {
+        if(BoneFields.Count >= ShieldCost)
+        {
+            TakeBone(5, direction);
+            return true;
+        }
+
+        return false;
+    }
+
     public void GiveBone()
     {
         GameObject newBoneField = GameObject.Instantiate(BoneFieldPrefab);
@@ -61,6 +75,23 @@ public class BoneField : MonoBehaviour
         jointRef.frequency = FieldSpringFrequency;
 
         BoneFields.Add(newBoneField);
+    }
+
+    public void TakeBone(int count, Vector3 direction)
+    {
+        count = Mathf.Min(count, BoneFields.Count);
+        for(int i = 0; i < count; i++)
+        {
+            ThrowBone();
+
+            Vector3 randomizer = new Vector3(
+                Random.Range(-1,1),
+                Random.Range(-1,1),
+                Random.Range(-1,1)
+            );
+
+            ThrowBones.Throw((direction + randomizer)*LostBoneVelocity);
+        }
     }
 
     private void SpawnBoneFields()
