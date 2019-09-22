@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320960321}
   - component: {fileID: 320960320}
+  - component: {fileID: 320960322}
   m_Layer: 0
   m_Name: skull
   m_TagString: Untagged
@@ -200,6 +201,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -33.95}
+--- !u!95 &320960322
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320960319}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a23cd739f38ffb24eb7eb773aef7992c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &485486256
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,9 +955,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Blurbs:
-  - "I\u2019m a bone-ified skeleton now!"
-  - '*sigh* '
-  - Get out.
+  - "You: I\u2019m a bone-ified skeleton now!"
+  - 'Death: *sigh* '
+  - 'Death: Get out.'
   BlurbSoundGenerator: {fileID: 1675115179310979012}
   ToTrigger: {fileID: 0}
   AltToTrigger: {fileID: 0}
@@ -964,11 +984,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Blurbs:
   - "Death! You old coot! I\u2019ve got a bone to pick with you."
-  - I got all my bones back!
-  - Excellent work. The Underworld has never looked better.
-  - "I mean worse. #More menacing? #Perhaps nastier\u2026"
-  - Take your time, bud.
-  - Regardless, a deal is a deal.
+  - 'You: I got all my bones back!'
+  - 'Death: Excellent work. The Underworld has never looked better.'
+  - "Death: I mean worse. #More menacing? #Perhaps nastier\u2026"
+  - 'You: Take your time, bud.'
+  - 'Death: Regardless, a deal is a deal.'
   BlurbSoundGenerator: {fileID: 1675115179310979012}
   ToTrigger: {fileID: 0}
   AltToTrigger: {fileID: 1675115179310979013}

@@ -1224,22 +1224,284 @@ PrefabInstance:
     - target: {fileID: 1675115179455676003, guid: 83171f0972c3f4846bff19388f585c06,
         type: 3}
       propertyPath: Blurbs.Array.data[0]
-      value: 'Ha ha ha, ##you guys hit me riiiiight in the funny bone.'
+      value: 'You: Ha ha ha, ##you guys hit me riiiiight in the funny bone.'
       objectReference: {fileID: 0}
     - target: {fileID: 1675115179455676012, guid: 83171f0972c3f4846bff19388f585c06,
         type: 3}
       propertyPath: ToMove
       value: 
       objectReference: {fileID: 2019271423}
+    - target: {fileID: 5515773951004470267, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[0]
+      value: "You: Hey let\u2019s do this again sometime! "
+      objectReference: {fileID: 0}
     - target: {fileID: 1675115179455676014, guid: 83171f0972c3f4846bff19388f585c06,
         type: 3}
       propertyPath: ToMove
       value: 
       objectReference: {fileID: 2019271423}
+    - target: {fileID: 6946692730717121859, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[0]
+      value: 'You: !'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946692730717121859, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[1]
+      value: 'You: !!!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6946692730717121859, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[2]
+      value: 'You: !!!!!!!!!!!'
+      objectReference: {fileID: 0}
     - target: {fileID: 1675115179455676001, guid: 83171f0972c3f4846bff19388f585c06,
         type: 3}
       propertyPath: ToMove
       value: 
       objectReference: {fileID: 2019271423}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[1]
+      value: 'You: Death! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[2]
+      value: 'You: Old buddy, # old pal! ## Long time no see!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[3]
+      value: 'You: Say, uh, could you give me a hand here or something? I seem to
+        have lost mine. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[6]
+      value: 'You: What can I say?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[7]
+      value: 'You: I crack myself up.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[8]
+      value: 'You: So Death, #my man, #whaddaya say? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[9]
+      value: 'You: Help an old sinner put himself back together again?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[11]
+      value: "You: Can\u2019t exactly put my John Handcock on anything at the moment. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[12]
+      value: "You: Pinky promise? #Wait\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[14]
+      value: 'You: Oh hell yeah, consent is super sexy these days.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[13]
+      value: 'Death: Your verbal consent will be sufficient. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[10]
+      value: 'Death: You wish to make a deal with the devil?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[5]
+      value: "Death: I see you haven\u2019t lost your sense of humor."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[4]
+      value: 'Death: *sigh* '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676009, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[0]
+      value: "Death: You\u2019ve gotten yourself into quite a predicament. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[0]
+      value: "You: Alright Death, my dude, if you put me back together again, what\u2019s
+        the catch? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[2]
+      value: "You: Lay \u2018em on me."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[5]
+      value: 'You: Fair enough.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[7]
+      value: 'You: Uh dude, really?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[10]
+      value: "You: Whatever, dude, I\u2019m not judging."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[14]
+      value: "You: Sounds easy enough, I\u2019ll just get right on that - OH WAIT.
+        No hands."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[16]
+      value: 'You: Alright, to hell with it! ###'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[17]
+      value: 'You: Sorry. #Ok, yeah, I accept your terms.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[18]
+      value: 'Death: Excellent. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[15]
+      value: 'Death: Agree to these terms and I will take care of that.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[13]
+      value: 'Death: Collect these bones on your journey, and bring them to me. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[12]
+      value: "Death: It\u2019s actually become a real issue\u2026 I hate clutter."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[11]
+      value: 'Death: There are many bones throughout the Underworld aside from your
+        own.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[9]
+      value: 'Death: I have an image to uphold.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[8]
+      value: "Death: The Lord of the Underworld can\u2019t possibly be expected to
+        clean his own lair."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[6]
+      value: 'Death: Two:# You must clean my lair. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[4]
+      value: 'Death: I cannot restore your form without all the pieces.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[3]
+      value: 'Death: One: #You must bring me all the pieces of your original body.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676008, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[1]
+      value: 'Death: I will restore your original form on two conditions.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676011, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[1]
+      value: "You: Oh Death, I know I\u2019m irresistible, but you gotta get my consent
+        before you try anything, you sly devil, you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676011, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[0]
+      value: 'Death: I have given you the ability of Passive Attraction. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[4]
+      value: "You: Well, I didn\u2019t want to get handsy with you anyway."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[10]
+      value: 'You: Aye, aye, captain. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[9]
+      value: 'Death: Return to me when you have all the bones. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[8]
+      value: "Death: You\u2019ve got a lot of work to do."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[7]
+      value: 'Death: Just go.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[6]
+      value: 'Death: *sigh*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[5]
+      value: 'Death: Just - '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[3]
+      value: 'Death: There will be no need for hands.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[2]
+      value: 'Death: Any bones you pass over will be added to your following.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[1]
+      value: 'Death: The power of Passive Attraction will cause nearby bones to gravitate
+        towards you. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675115179455676010, guid: 83171f0972c3f4846bff19388f585c06,
+        type: 3}
+      propertyPath: Blurbs.Array.data[0]
+      value: 'Death: *sigh*'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83171f0972c3f4846bff19388f585c06, type: 3}
