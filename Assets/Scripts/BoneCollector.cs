@@ -11,7 +11,8 @@ public class BoneCollector : MonoBehaviour
         {
 
             GameObject.FindWithTag("JukeBox").GetComponent<effectsplayer>().Playcollect();
-            BoneField.GiveBone();
+            
+            BoneField.GiveBone(other.gameObject.GetComponent<SpriteRenderer>().sprite);
             GameObject.Destroy(other.gameObject);
             
         }
