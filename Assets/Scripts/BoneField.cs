@@ -52,6 +52,10 @@ public class BoneField : MonoBehaviour
         return false;
     }
 
+    public void ThrowAllBones(){
+        while(ThrowBone()){}
+    }
+
     public bool BoneShield(Vector3 direction)
     {
         if(BoneFields.Count >= ShieldCost)
