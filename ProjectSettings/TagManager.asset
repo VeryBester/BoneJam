@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - CollectibleBone
   - TextDisplay
+  - JukeBox
   layers:
   - Default
   - TransparentFX
